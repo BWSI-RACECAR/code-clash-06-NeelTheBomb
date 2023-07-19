@@ -11,8 +11,8 @@ class Solution:
             missing = []
             for i in range(len(numbers)-1):
                 if numbers[i+1] > (numbers[i] + 1):
-                     for num in (numbers[i+1]-numbers[i]):
-                        missing.append(numbers[i]+num)
+                     for n in range(numbers[i+1]-numbers[i]):
+                        missing.append(numbers[i]+numbers[n])
             return missing
             pass
 
