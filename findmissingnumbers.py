@@ -8,6 +8,7 @@ class Solution:
                  return "None missing"
             numbers.sort()
             numbers.insert(0, 0)
+            print(numbers)
             
             #TODO: Write code below to return an int list with the solution to the prompt.
             missing = []
