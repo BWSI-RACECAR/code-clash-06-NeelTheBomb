@@ -10,7 +10,7 @@ class Solution:
             #numbers.insert(0, 0)
             print(numbers)
             for i in range(len(numbers)):
-                numbers[i] = int(numbers[i])            
+                numbers[i] = round(numbers[i])            
             #TODO: Write code below to return an int list with the solution to the prompt.
             missing = []
             for i in range(len(numbers)-1):
