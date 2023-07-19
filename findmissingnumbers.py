@@ -6,7 +6,8 @@ class Solution:
                  return "Invalid input"
             if len(numbers) == 1:
                  return "None missing"
-            number.insert(0, 0)
+            numbers = numbers.sort()
+            numbers.insert(0, 0)
             
             #TODO: Write code below to return an int list with the solution to the prompt.
             missing = []
