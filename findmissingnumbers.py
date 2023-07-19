@@ -9,11 +9,12 @@ class Solution:
             numbers.sort()
             numbers.insert(0, 0)
             print(numbers)
-            
+            for i in range(len(numbers)):
+                numbers[i] = int(numbers[i])            
             #TODO: Write code below to return an int list with the solution to the prompt.
             missing = []
             for i in range(len(numbers)-1):
-                if numbers[i+1] > (numbers[i] + 1):
+                if numbers[i+1] > (numbers[i] + 2):
                      for n in range(int(numbers[i+1]-numbers[i])):
                         missing.append(numbers[i]+numbers[n])
             print(missing)
