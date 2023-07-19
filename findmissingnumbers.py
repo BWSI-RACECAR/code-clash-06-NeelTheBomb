@@ -7,7 +7,7 @@ class Solution:
             if len(numbers) == 1:
                  return "None missing"
             numbers.sort()
-            numbers.insert(0, 0)
+            #numbers.insert(0, 0)
             print(numbers)
             for i in range(len(numbers)):
                 numbers[i] = int(numbers[i])            
