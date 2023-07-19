@@ -17,7 +17,7 @@ class Solution:
                 if numbers[i+1] > (numbers[i] + 1):
                      for n in range(int(numbers[i+1]-numbers[i])):
                          n = n + 1
-                        missing.append(numbers[i]+numbers[n])
+                         missing.append(numbers[i]+numbers[n])
             print(missing)
             return missing
             pass
