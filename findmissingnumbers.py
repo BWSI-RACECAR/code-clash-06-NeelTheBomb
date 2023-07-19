@@ -14,8 +14,8 @@ class Solution:
             #TODO: Write code below to return an int list with the solution to the prompt.
             missing = []
             for i in range(len(numbers)-1):
-                if numbers[i+1] > (numbers[i] + 2):
-                     for n in range(int(numbers[i+1]-numbers[i])):
+                if numbers[i+1] > (numbers[i] + 1):
+                     for n in range(int(numbers[i+1]-numbers[i])-1):
                         missing.append(numbers[i]+numbers[n])
             print(missing)
             return missing
